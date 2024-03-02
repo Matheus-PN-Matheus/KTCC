@@ -1,0 +1,70 @@
+[debug] [2024-03-01T14:59:23.026Z] ----------------------------------------------------------------------
+[debug] [2024-03-01T14:59:23.030Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\KTCC\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-03-01T14:59:23.030Z] CLI Version:   13.4.0
+[debug] [2024-03-01T14:59:23.031Z] Platform:      win32
+[debug] [2024-03-01T14:59:23.031Z] Node Version:  v20.11.1
+[debug] [2024-03-01T14:59:23.031Z] Time:          Fri Mar 01 2024 16:59:23 GMT+0200 (Central Africa Time)
+[debug] [2024-03-01T14:59:23.031Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-03-01T14:59:23.041Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-03-01T14:59:23.042Z] > authorizing via signed-in user (matheus.msquare90@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\KTCC\Desktop\Projects\ToDoList\my-todo-app
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-03-01T15:00:25.859Z] > refreshing access token with scopes: []
+[debug] [2024-03-01T15:00:25.865Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-03-01T15:00:25.865Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-03-01T15:00:26.560Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-03-01T15:00:26.561Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-03-01T15:00:26.610Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-03-01T15:00:27.690Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-03-01T15:00:27.690Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project lots-d (ToDoList) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2024-03-01T15:00:35.547Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/lots-d/services/firebasedatabase.googleapis.com [none]
+[debug] [2024-03-01T15:00:35.547Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/lots-d/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/lots-d
+[debug] [2024-03-01T15:00:37.755Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/lots-d/services/firebasedatabase.googleapis.com 200
+[debug] [2024-03-01T15:00:37.755Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/lots-d/services/firebasedatabase.googleapis.com [omitted]
+[warn] !  database: missing required API firebasedatabase.googleapis.com. Enabling now... 
+[debug] [2024-03-01T15:00:37.758Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/lots-d/services/firebasedatabase.googleapis.com:enable [none]
+[debug] [2024-03-01T15:00:37.758Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/lots-d/services/firebasedatabase.googleapis.com:enable x-goog-quota-user=projects/lots-d
+[debug] [2024-03-01T15:00:39.981Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/lots-d/services/firebasedatabase.googleapis.com:enable 200
+[debug] [2024-03-01T15:00:39.982Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/lots-d/services/firebasedatabase.googleapis.com:enable [omitted]
+[debug] [2024-03-01T15:00:49.999Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/lots-d/services/firebasedatabase.googleapis.com [none]
+[debug] [2024-03-01T15:00:50.000Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/lots-d/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/lots-d
+[debug] [2024-03-01T15:00:52.947Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/lots-d/services/firebasedatabase.googleapis.com 200
+[debug] [2024-03-01T15:00:52.948Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/lots-d/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2024-03-01T15:00:52.962Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/lots-d [none]
+[debug] [2024-03-01T15:00:53.757Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/lots-d 200
+[debug] [2024-03-01T15:00:53.757Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/lots-d {"projectId":"lots-d","projectNumber":"256209590420","displayName":"ToDoList","name":"projects/lots-d","resources":{"hostingSite":"lots-d"},"state":"ACTIVE","etag":"1_e0a0aad0-2f2a-40ff-a0be-a9f46f4636fb"}
+[debug] [2024-03-01T15:03:12.181Z] >>> [apiv2][query] POST https://firebasedatabase.googleapis.com/v1beta/projects/lots-d/locations/us-central1/instances databaseId=lots-d-default-rtdb&validateOnly=true
+[debug] [2024-03-01T15:03:12.181Z] >>> [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/lots-d/locations/us-central1/instances {"type":"default_database"}
+[debug] [2024-03-01T15:03:14.383Z] <<< [apiv2][status] POST https://firebasedatabase.googleapis.com/v1beta/projects/lots-d/locations/us-central1/instances 200
+[debug] [2024-03-01T15:03:14.383Z] <<< [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/lots-d/locations/us-central1/instances {"name":"projects/256209590420/locations/us-central1/instances/lots-d-default-rtdb","project":"projects/256209590420","databaseUrl":"https://lots-d-default-rtdb.firebaseio.com","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[debug] [2024-03-01T15:03:14.387Z] >>> [apiv2][query] POST https://firebasedatabase.googleapis.com/v1beta/projects/lots-d/locations/us-central1/instances databaseId=lots-d-default-rtdb
+[debug] [2024-03-01T15:03:14.387Z] >>> [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/lots-d/locations/us-central1/instances {"type":"default_database"}
+[debug] [2024-03-01T15:03:15.183Z] <<< [apiv2][status] POST https://firebasedatabase.googleapis.com/v1beta/projects/lots-d/locations/us-central1/instances 200
+[debug] [2024-03-01T15:03:15.183Z] <<< [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/lots-d/locations/us-central1/instances {"name":"projects/256209590420/locations/us-central1/instances/lots-d-default-rtdb","project":"projects/256209590420","databaseUrl":"https://lots-d-default-rtdb.firebaseio.com","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
